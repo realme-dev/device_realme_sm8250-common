@@ -137,6 +137,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
+# DeviceExtras
+PRODUCT_PACKAGES += \
+    DeviceExtras \
+    tri-state-key-calibrate
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V1-ndk_platform.vendor \
@@ -303,6 +308,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
+    DeviceExtrasResCommon
 
 # Partition
 PRODUCT_BUILD_SUPER_PARTITION := false
