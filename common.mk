@@ -345,6 +345,7 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
+	init.oplus_chg.sh \
     init.qcom.usb.sh
 
 PRODUCT_PACKAGES += \
@@ -357,6 +358,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
     init.target.rc \
+	init.bitra.rc \
     ueventd.qcom.rc
 
 PRODUCT_COPY_FILES += \
